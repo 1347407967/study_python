@@ -1,0 +1,8 @@
+##阻止继承
+##sealed类在Java 15中目前是预览状态，要启用它，
+必须使用参数--enable-preview和--source 15。##
+它只允许指定的3个类继承它，这种sealed类主要用于一些框架，防止继承被滥用。
+public sealed class Shape permits Rect, Circle, Triangle {
+    ...
+}
+permits:许可证，许可，允许
